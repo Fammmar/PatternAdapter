@@ -34,3 +34,24 @@ class CentralProfessional{ // класс центрального процесс
         Car.xenonOff();
     }
 }
+
+interface BasicCarRus {
+    public void drive();
+
+    public void basicLightOn();
+
+    public void basicLightOff();
+}
+class AudiRus implements BasicCarRus {
+    final public int light=50;
+    public void drive() {
+        ;
+        System.out.println("Audi riders");
+    }
+    public void basicLightOn() {
+        System.out.println(" Audi light On");
+    }
+    public void basicLightOff() {
+        System.out.println(" Audi Light Off");
+    }
+}
